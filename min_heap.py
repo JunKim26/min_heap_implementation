@@ -9,7 +9,6 @@ from a5_include import *
 class MinHeapException(Exception):
     """
     Custom exception to be used by MinHeap class
-    DO NOT CHANGE THIS CLASS IN ANY WAY
     """
     pass
 
@@ -18,7 +17,6 @@ class MinHeap:
     def __init__(self, start_heap=None):
         """
         Initializes a new MinHeap
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         self.heap = DynamicArray()
 
@@ -31,14 +29,12 @@ class MinHeap:
     def __str__(self) -> str:
         """
         Return MH content in human-readable form
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         return 'HEAP ' + str(self.heap)
 
     def is_empty(self) -> bool:
         """
         Return True if no elements in the heap, False otherwise
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         return self.heap.length() == 0
 
