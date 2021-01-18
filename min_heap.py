@@ -65,10 +65,10 @@ class MinHeap:
                 parent_index = (index - 1) // 2                                             # resets the parent node index
 
 
-                if index == 0:
+                if index == 0:                                                              # if index is at 0, return
                     return
 
-                i = parent_index
+                i = parent_index                                                            # sets i for the next iteration, and will keep going until the end of the heap
 
             else:
                 return
