@@ -1,5 +1,7 @@
 # Author: Jun Kim
-# Description: In this program a MinHeap class is created including commonly used functions.
+# Description: In this program we are implementing a minimum heap class using imported helper data structures of DynamicArray and LinkedList classes. 
+# The is_empty function checks to see if the MinHeap is empty and returns a boolean value. The add function adds a node object to the heap, swapping the nodes orders as necessary and updates the length.
+# The parent function returns the index of the parent node The left and right functions return the index of the left and right nodes
 
 
 # Import pre-written DynamicArray and LinkedList classes
