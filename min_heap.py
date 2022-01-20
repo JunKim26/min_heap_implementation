@@ -1,5 +1,5 @@
 # Author: Jun Kim
-# Description: In this program we will implement a MinHeap class.
+# Description: In this program a MinHeap class is created including commonly used functions.
 
 
 # Import pre-written DynamicArray and LinkedList classes
