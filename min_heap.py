@@ -52,25 +52,26 @@ class MinHeap:
         index = self.heap.length()-1
 
 
-        parent_index = (index - 1) // 2                                                     # sets the index for the parent node
-        parent_node = self.heap.get_at_index(parent_index)                                  # parent node found using parent_index
+        parent_index = (index - 1) // 2                                                    
+        parent_node = self.heap.get_at_index(parent_index)                                  
 
         i = index
-
-        while i < self.heap.length():                                                       # loops until it reaches the end of the heap
-
-            if self.heap.get_at_index(index) < self.heap.get_at_index(parent_index):        # if the current index is less than the parent index, swap current node with parent node
+        
+         # loops until it reaches the end of the heap
+        while i < self.heap.length():                                                      
+            
+            if self.heap.get_at_index(index) < self.heap.get_at_index(parent_index):        
 
                 self.heap.swap(index, parent_index)
+        
+                index = parent_index                                                        
+                parent_index = (index - 1) // 2                                            
 
-                index = parent_index                                                        # the index of the current node switches to the parent nodes index
-                parent_index = (index - 1) // 2                                             # resets the parent node index
 
-
-                if index == 0:                                                              # if index is at 0, return
+                if index == 0:                                                              
                     return
 
-                i = parent_index                                                            # sets i for the next iteration, and will keep going until the end of the heap
+                i = parent_index                                                            
 
             else:
                 return
